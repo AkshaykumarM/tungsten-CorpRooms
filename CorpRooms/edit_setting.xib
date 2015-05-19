@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+            <string>Roboto-Light</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yh8-Ai-KRd">
+                    <rect key="frame" x="45" y="156" width="275" height="3"/>
+                    <color key="backgroundColor" red="0.72941176470000002" green="0.72941176470000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="SMS Alerts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rr9-dM-O0i">
+                    <rect key="frame" x="32" y="110" width="75" height="21"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MAT-bH-kr1">
+                    <rect key="frame" x="45" y="236" width="275" height="3"/>
+                    <color key="backgroundColor" red="0.72941176470000002" green="0.72941176470000002" blue="0.72941176470000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ON" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xjx-uV-maX">
+                    <rect key="frame" x="206" y="190" width="38" height="21"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email Alerts" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IqN-o0-gHA">
+                    <rect key="frame" x="32" y="190" width="75" height="21"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eOr-nq-z07">
+                    <rect key="frame" x="252" y="105" width="51" height="31"/>
+                </switch>
+                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kku-4p-tjN">
+                    <rect key="frame" x="252" y="185" width="51" height="31"/>
+                </switch>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="ON" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQK-uh-EYI">
+                    <rect key="frame" x="206" y="112" width="38" height="17"/>
+                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="14"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IqN-o0-gHA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="05X-Yy-gIF"/>
+                <constraint firstItem="kku-4p-tjN" firstAttribute="centerX" secondItem="MAT-bH-kr1" secondAttribute="centerX" constant="94" id="08t-ik-PkJ"/>
+                <constraint firstItem="rr9-dM-O0i" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="110" id="3cj-xy-Ahi"/>
+                <constraint firstItem="CQK-uh-EYI" firstAttribute="centerY" secondItem="Yh8-Ai-KRd" secondAttribute="centerY" constant="-37" id="8Cc-o9-8XT"/>
+                <constraint firstAttribute="centerY" secondItem="rr9-dM-O0i" secondAttribute="centerY" constant="163.5" id="9TJ-wx-FuM"/>
+                <constraint firstAttribute="centerX" secondItem="rr9-dM-O0i" secondAttribute="centerX" constant="90.5" id="Al9-2w-K0G"/>
+                <constraint firstItem="MAT-bH-kr1" firstAttribute="top" secondItem="kku-4p-tjN" secondAttribute="bottom" constant="20" id="CJa-Pd-agC"/>
+                <constraint firstItem="Yh8-Ai-KRd" firstAttribute="top" secondItem="eOr-nq-z07" secondAttribute="bottom" constant="20" id="CgX-51-xnL"/>
+                <constraint firstItem="MAT-bH-kr1" firstAttribute="centerX" secondItem="Yh8-Ai-KRd" secondAttribute="centerX" id="Dct-Rl-QcF"/>
+                <constraint firstItem="MAT-bH-kr1" firstAttribute="centerY" secondItem="Yh8-Ai-KRd" secondAttribute="centerY" constant="80" id="FLX-nr-E06"/>
+                <constraint firstItem="IqN-o0-gHA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="190" id="LKl-58-Ahw"/>
+                <constraint firstAttribute="centerX" secondItem="eOr-nq-z07" secondAttribute="centerX" constant="-116.5" id="Lbp-H6-mip"/>
+                <constraint firstItem="Yh8-Ai-KRd" firstAttribute="centerX" secondItem="xjx-uV-maX" secondAttribute="centerX" constant="-42.5" id="Msq-iR-28V"/>
+                <constraint firstItem="IqN-o0-gHA" firstAttribute="centerY" secondItem="xjx-uV-maX" secondAttribute="centerY" id="P7R-9p-3VG"/>
+                <constraint firstItem="Yh8-Ai-KRd" firstAttribute="centerX" secondItem="eOr-nq-z07" secondAttribute="centerX" constant="-94" id="SaJ-6t-OGM"/>
+                <constraint firstItem="CQK-uh-EYI" firstAttribute="centerY" secondItem="eOr-nq-z07" secondAttribute="centerY" id="V3T-jh-KF9"/>
+                <constraint firstAttribute="trailing" secondItem="Yh8-Ai-KRd" secondAttribute="trailing" id="Xh4-FE-7u4"/>
+                <constraint firstItem="kku-4p-tjN" firstAttribute="centerY" secondItem="xjx-uV-maX" secondAttribute="centerY" id="XpV-qr-6ce"/>
+                <constraint firstItem="rr9-dM-O0i" firstAttribute="centerX" secondItem="Yh8-Ai-KRd" secondAttribute="centerX" constant="-113" id="dZ4-Mi-bIn"/>
+                <constraint firstItem="Yh8-Ai-KRd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="e4N-Kz-Gh3"/>
+                <constraint firstItem="CQK-uh-EYI" firstAttribute="centerX" secondItem="Yh8-Ai-KRd" secondAttribute="centerX" constant="42.5" id="gkj-4C-MnT"/>
+                <constraint firstItem="IqN-o0-gHA" firstAttribute="centerX" secondItem="rr9-dM-O0i" secondAttribute="centerX" id="gw4-XX-o3f"/>
+                <constraint firstItem="kku-4p-tjN" firstAttribute="top" secondItem="Yh8-Ai-KRd" secondAttribute="bottom" constant="26" id="mgI-ro-hRR"/>
+                <constraint firstItem="rr9-dM-O0i" firstAttribute="centerY" secondItem="CQK-uh-EYI" secondAttribute="centerY" id="ot6-Ww-9f3"/>
+                <constraint firstItem="MAT-bH-kr1" firstAttribute="leading" secondItem="Yh8-Ai-KRd" secondAttribute="leading" id="rH3-kY-Yat"/>
+                <constraint firstItem="rr9-dM-O0i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="32" id="so8-CH-tmQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
