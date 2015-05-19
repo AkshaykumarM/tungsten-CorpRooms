@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SWRevealViewController.h"
 @interface CRPRContactsTabViewController : UIViewController
 
 @end

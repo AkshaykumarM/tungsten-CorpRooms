@@ -17,6 +17,21 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    
+    UIImage *navBackgroundImage = [UIImage imageNamed:@"nav_bg.png"];
+    
+    [[UINavigationBar appearance] setBackgroundImage:navBackgroundImage forBarMetrics:UIBarMetricsDefault];
+    UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0,self.window.frame.size.width, 20)];
+    view.backgroundColor=[UIColor whiteColor];
+    [self.window.rootViewController.view addSubview:view];
+    [[UINavigationBar appearance] setTitleTextAttributes: [NSDictionary dictionaryWithObjectsAndKeys:
+                                                           [UIColor colorWithRed:0.651 green:0.651 blue:0.651 alpha:1]  , UITextAttributeTextColor,
+                                                           [UIColor colorWithRed:0.651 green:0.651 blue:0.651 alpha:1] ,UITextAttributeTextShadowColor,
+                                                           [NSValue valueWithUIOffset:UIOffsetMake(0, 0)],
+                                                           UITextAttributeTextShadowOffset,
+                                                           [UIFont fontWithName:@"Roboto-Light" size:18.0], UITextAttributeFont, nil]];
     return YES;
 }
 

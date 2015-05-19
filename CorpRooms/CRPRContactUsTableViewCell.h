@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface CRPRContactUsTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIImageView *imgV;
+@property (weak, nonatomic) IBOutlet UILabel *titleLBL;
 
 @end

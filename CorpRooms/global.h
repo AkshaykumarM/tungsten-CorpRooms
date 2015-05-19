@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#define DEFAULTPLACEHOLDER @"user.png"
 @interface global : NSObject
 
 @end

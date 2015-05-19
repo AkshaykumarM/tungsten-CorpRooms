@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SWRevealViewController.h"
 @interface CRPRProfileViewController : UIViewController
 
 @end

@@ -68,8 +68,9 @@ const NSInteger kCJMTabBarInitialButtonIndex = 0;
     self.tabBar.barTintColor = [UIColor colorWithWhite:0.9 alpha:1.0];
     
     // CHANGE THIS: This color is the color of you tab bar icon and title when it is selected.
-    self.tabBar.tintColor = [UIColor greenColor];
-    
+    self.tabBar.tintColor = [UIColor colorWithRed:0.835 green:0.859 blue:0.306 alpha:1] ;
+    [self.tabBar setContentMode:UIViewContentModeCenter];
+    self.tabBar.frame=CGRectMake(0, 65, self.view.frame.size.width, 48);
     // set up scroll view
     _scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.tabBar.frame), CGRectGetHeight(self.tabBar.frame))];
     _scrollView.backgroundColor = self.tabBar.barTintColor;
@@ -196,7 +197,7 @@ const NSInteger kCJMTabBarInitialButtonIndex = 0;
         _passiveColor = [UIColor colorWithWhite:0.6 alpha:1.0];
         
         // set title
-        self.titleLabel.font = [UIFont fontWithName:@"Avenir" size:12.0f];
+        self.titleLabel.font = [UIFont fontWithName:@"Roboto-Light" size:15.0f];
         [self setTitleColor:_passiveColor forState:UIControlStateNormal];
         // align to bottom
         [self setContentVerticalAlignment:UIControlContentVerticalAlignmentBottom];

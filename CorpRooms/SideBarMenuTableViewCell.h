@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface SideBarMenuTableViewCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UILabel *menuTitleLBL;
+@property (weak, nonatomic) IBOutlet UIImageView *menuIMGView;
 
 @end
