@@ -21,7 +21,9 @@
     self.navigationItem.leftBarButtonItem.action=@selector(revealToggle:);
     [self.navigationController.topViewController.navigationItem setHidesBackButton:YES];
       [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    self.automaticallyAdjustsScrollViewInsets=NO;
     [self setupProfilePic];
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
@@ -30,6 +32,44 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    return 60;
+    
+}
+
+- (float)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    // This will create a "invisible" footer
+    return 0.01f;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    return 10;
+    
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    NSString *simpleTableIdentifier;
+    
+    simpleTableIdentifier= @"bookingALLCell";
+    
+    CRPRALLBookingsTableViewCell *cell=(CRPRALLBookingsTableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier forIndexPath:indexPath];
+    
+    cell.descriptionLBL.text = @"Mon 2 Apr, 2 rooms@Daffodis Appartment";
+    cell.ownerNameLBL.text= @"Mr. Akshay Maldhure";
+
+    
+    return cell;
+}
+
+
 /*
 #pragma mark - Navigation
 

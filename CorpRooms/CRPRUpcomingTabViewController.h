@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "SWRevealViewController.h"
+#import "CRPRUpcomingTabViewController.h"
+#import "CRPRUpcomigTabTableViewCell.h"
 @interface CRPRUpcomingTabViewController : UIViewController
 
 @end

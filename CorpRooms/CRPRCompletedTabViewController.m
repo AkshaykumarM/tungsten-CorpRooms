@@ -33,6 +33,42 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    return 60;
+    
+}
+
+- (float)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    // This will create a "invisible" footer
+    return 0.01f;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    
+    return 10;
+    
+}
+
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    NSString *simpleTableIdentifier;
+    
+    simpleTableIdentifier= @"bookingCompletedCell";
+    
+    CRPRCompletedTabTableViewCell *cell=(CRPRCompletedTabTableViewCell *)[tableView dequeueReusableCellWithIdentifier:simpleTableIdentifier forIndexPath:indexPath];
+    
+    cell.descriptionLBL.text = @"Tue 1 Apr, 2 rooms@Daffodis Appartment";
+    cell.ownerNameLBL.text= @"Mr. Vikram Chandel";
+    
+    
+    return cell;
+}
+
 
 /*
  #pragma mark - Navigation

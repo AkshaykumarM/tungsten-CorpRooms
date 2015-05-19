@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SWRevealViewController.h"
+#import "CRPRCompletedTabTableViewCell.h"
 @interface CRPRCompletedTabViewController : UIViewController
 
 @end

@@ -22,23 +22,23 @@
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashBG.png" translatesAutoresizingMaskIntoConstraints="NO" id="SXr-hc-Ei0">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-333233.png" translatesAutoresizingMaskIntoConstraints="NO" id="ioE-OM-wzx">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="circle-333233.png" translatesAutoresizingMaskIntoConstraints="NO" id="ioE-OM-wzx">
                     <rect key="frame" x="62" y="135" width="99" height="99"/>
                     <constraints>
                         <constraint firstAttribute="height" relation="lessThanOrEqual" constant="128" id="kwq-B3-CNM"/>
                         <constraint firstAttribute="width" secondItem="ioE-OM-wzx" secondAttribute="height" multiplier="1:1" id="lX4-Xg-84f"/>
                     </constraints>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="circle-D5DB4E.png" translatesAutoresizingMaskIntoConstraints="NO" id="4bP-7u-dmq">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle-D5DB4E.png" translatesAutoresizingMaskIntoConstraints="NO" id="4bP-7u-dmq">
                     <rect key="frame" x="169" y="135" width="99" height="99"/>
                 </imageView>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" misplaced="YES" text="CorpRooms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-Sm-01g">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="CorpRooms" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXh-Sm-01g">
                     <rect key="frame" x="55" y="264" width="210" height="47"/>
                     <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="40"/>
                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Easy Room Bookings." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veE-E7-BZo">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Easy Room Bookings." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="veE-E7-BZo">
                     <rect key="frame" x="89" y="311" width="143" height="20"/>
                     <fontDescription key="fontDescription" name="RobotoCondensed-Light" family="Roboto Condensed" pointSize="17"/>
                     <color key="textColor" red="0.74117647058823533" green="0.74117647058823533" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
